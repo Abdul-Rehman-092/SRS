@@ -27,7 +27,11 @@ import java.sql.Statement;
 import java.util.ResourceBundle;
 
 /**
- * Created by Tanvir on 8/20/2016.
+This is a Java class representing a controller for the student registration functionality. It implements the Initializable interface, which allows for initializing the controller and its components.
+
+The class includes several member variables for database connection, statement, and result set objects, as well as references to UI components such as text fields and table views. It also has a reference to a MenuBarControl object for handling menu bar actions.
+
+The class provides methods for setting the stage, student ID, and chosen section. It also includes methods for updating the registration section, getting data from the database and adding it to observable lists, and initializing the table views with the retrieved data.
  */
 public class RegistrationController implements Initializable {
 

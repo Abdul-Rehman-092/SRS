@@ -26,9 +26,21 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * Created by Tanvir on 8/3/2016.
- */
+/*
+It provides functionality related to managing student information, course registration, and viewing results.
+The class includes various JavaFX UI components such as TableView, TableColumn, TextField, and Button for displaying and interacting with student data.
+
+The main features of this class are as follows:
+
+Displaying the running courses of a student, including course code, title, credit, and section.
+Displaying the result history of a student, including course code, section, and GPA.
+Allowing the student to edit and save their profile information, such as first name, last name, email, phone number, address, and guardian information.
+Enabling the student to view their detailed profile information in a separate window.
+Enabling the student to register for courses using the RegistrationController.
+Providing an initialization method to set up the table views and populate them with data.
+Handling menu bar button clicks for about and close actions.
+Note: This class assumes the existence of other classes and resources such as RegistrationTableData, resultHistoryTableData, DBConnection, and various FXML files for UI layout.
+*/
 public class Student {
 
     @FXML
