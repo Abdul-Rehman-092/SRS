@@ -157,7 +157,7 @@ public class RegistrationController implements Initializable {
         }
         return currentCourseTableData;
     }
-
+// If the finalAllCourse is not empty, it appends the new course and section to the existing courses.
     public void studentRegistrationSectionUpdate() throws SQLException {
         connection = database.getConnection();
         statement = connection.createStatement();
