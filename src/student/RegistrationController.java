@@ -48,9 +48,12 @@ public class RegistrationController implements Initializable {
         this.stage=stage;
     }
 
+    // Sets the stage for the controller
     public void setID(String ID){
         this.ID = ID;
     }
+
+    // Sets the student ID for the controller
     public void setChoosingSec(String ChoosingSec){
         this.ChoosingSec=ChoosingSec;
     }
@@ -89,7 +92,7 @@ public class RegistrationController implements Initializable {
         this.tanother = a;
     }
 
-
+    // Retrieves data from the database and adds it to an observable list
     private ObservableList getDataFromAllCourseAndAddToObservableList(String query){
         ObservableList<RegistrationTableData> allCourseTableData = FXCollections.observableArrayList();
         try {
@@ -114,7 +117,7 @@ public class RegistrationController implements Initializable {
         }
         return allCourseTableData;
     }
-
+// Retrieves data from the database and adds it to an observable list for the current course table
     public ObservableList getDataFromCurrentCourseAndAddToObservableList(String query){
         ObservableList<RegistrationTableData> currentCourseTableData = FXCollections.observableArrayList();
         try {
